@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<header style="background-color: #000000" >
+    <img src="https://d1diae5goewto1.cloudfront.net/_skins/capetown/img/logo.png" alt="WWF" style="float: left; height: 60px;">
+    <div class="navbar">
+            <button style="background-color: #000000;border: none;"> 
+            <a href="">HİKAYEMİZ</a>
+            </button>
+            <button style="background-color: #000000;border: none;">
+                <a href="">ÇALIŞMALARIMIZ</a> 
+            </button>
+            <button style="background-color: #000000;border: none;">
+                <a href="">KAMPANYALARIMIZ</a>
+            </button>
+            <button style="background-color: #000000;border: none;">
+                <a href="">YAYINLARIMIZ</a>
+            </button>
+            <button style="background-color: #000000;border: none;">
+                <a href="">GÜNCEL</a>
+            </button>
+            <button style="background-color: #f89840;border: none;">
+                <a href="">DESTEK OL</a>
+            </button>
+            <button style="background-color:#ffc745;border: none;">
+                <a href="">WWF MARKET</a>
+            </button>
+    </div>
+    
+</header>
+
+<section>
+  <div class="container"  >
+    <img src="https://wwftr.awsassets.panda.org/img/website_1800x950_3_17324.jpg"  alt="" border="0">
+      <h1>TÜRKİYE'NİN CANLARINI<br/>YAŞATALIM </h1> 
+      <button class="btn" hidden: none;>DESTEK</button>
+  </div>
+</section>
+
+
+
+<footer>
+    <section class="footer" style="background-color: #393939;">
+        <img src="https://d1diae5goewto1.cloudfront.net/_skins/capetown/img/logo.png" alt="WWF" style="width:120px; float: left;">
+        <p class="slogan" style="margin-right: 20px; float: left!important; float: left;">
+        İnsanlığın doğayla uyum <br/> içinde yaşadığı bir <br/> geleceğin kurulması için çalışıyoruz.
+        </p>
+        <a>DENİZLER</a>
+        <a>|</a>
+        <a>ORMANLAR</a>
+        <a>|</a>
+        <a>YABAN HAYATI</a>
+        <a>|</a>
+        <a>GIDA</a>
+        <a>|</a>
+        <a>İKLİM VE ENERJİ</a>
+        <a>|</a>
+        <a>TATLI SU</a>
+   </section>
+</footer>
+
+</body>
+
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the header */
+    header {
+      background-color: black;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: black;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px; /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    article {
+      float: left;
+      padding: 200px;
+      width: 100%;
+      background-color: white
+      /*height: 200px; only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #393939;
+      padding: 40px;
+      font-size: 20px;
+      text-align: left;
+      padding-bottom: 19px;
+      padding-top: 19px;
+      line-height: 1.7;
+      left: 20px;
+      color: white;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+ .navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.image { 
+   position: absolute; 
+   width: 100%; 
+}
+h1 { 
+    position: absolute;
+    top: 50px;
+    font-size: 70px;
+    left: 250px;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 45%);
+    color: white;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 200%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f89840;
+  color: white;
+  font-size: 16px;
+  width: 250px;
+  margin-top: auto;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+ 
+}
+
+.navbar a:hover {
+  background-color: #857266;
+}
+
+    </style>
+</html>
+
